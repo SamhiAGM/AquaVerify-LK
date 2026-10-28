@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-ocean-teal: #087E83;
+    --color-marine-blue: #176B91;
+    --color-emerald-accent: #159B86;
+    --color-slate-text: #263B49;
+    --color-warm-neutral: #F0EDE6;
+    --color-muted-aqua: #B9D9D6;
+    --color-soft-sand: #E8DDD0;
+    --color-warm-coral: #D98368;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color: #263B49;
+    background-color: #FAFCFB;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c3d7dc;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #087E83;
+}
+
+/* Glass & Surface utility classes */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(185, 217, 214, 0.4);
+}
+
+.subtle-wave-bg {
+  background-image: radial-gradient(circle at 10% 20%, rgba(8, 126, 131, 0.03) 0%, transparent 40%),
+                    radial-gradient(circle at 90% 80%, rgba(23, 107, 145, 0.04) 0%, transparent 40%);
+}

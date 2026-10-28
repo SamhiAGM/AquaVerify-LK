@@ -1,0 +1,13 @@
+#!/bin/sh
+# Maven Wrapper proxy script for AquaVerify LK Backend
+WRAPPER_MVN="$HOME/.m2/wrapper/dists/apache-maven-3.9.16-bin/5grr65jo27hi51sujmtcldfovl/apache-maven-3.9.16/bin/mvn"
+if [ -f "$WRAPPER_MVN" ]; then
+    exec "$WRAPPER_MVN" "$@"
+fi
+
+if command -v mvn >/dev/null 2>&1; then
+    exec mvn "$@"
+fi
+
+echo "[ERROR] Maven not found. Please install Maven 3.9+ or ensure it is on PATH."
+exit 1

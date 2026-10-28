@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <defs>
+    <linearGradient id="aquaGrad" x1="6" y1="4" x2="42" y2="44" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#159B86" />
+      <stop offset="50%" stop-color="#087E83" />
+      <stop offset="100%" stop-color="#176B91" />
+    </linearGradient>
+    <linearGradient id="waveGrad" x1="10" y1="26" x2="38" y2="40" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#B9D9D6" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.4"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Droplet Background -->
+  <path d="M24 4C24 4 10 19 10 29.5C10 37.23 16.27 43.5 24 43.5C31.73 43.5 38 37.23 38 29.5C38 19 24 4 24 4Z" 
+        fill="url(#aquaGrad)" />
+        
+  <!-- Wave Accent -->
+  <path d="M12 32C16 35 20 29 24 32C28 35 32 30 36 33C37.3 30.8 38 28.3 38 25.5C38 25 37.9 24.5 37.8 24C34 22 30 26 26 23C22 20 18 25 13 23.5C11.5 26.5 11 29 12 32Z" 
+        fill="url(#waveGrad)" opacity="0.35" />
+        
+  <!-- Verification Shield Checkmark -->
+  <circle cx="24" cy="27" r="9" fill="#FFFFFF" fill-opacity="0.2" />
+  <path d="M19 27L22.5 30.5L29 23.5" 
+        stroke="#FFFFFF" 
+        stroke-width="3" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" />
+</svg>

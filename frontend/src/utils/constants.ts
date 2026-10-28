@@ -1,0 +1,47 @@
+export const SRI_LANKAN_DISTRICTS = [
+  'Colombo',
+  'Gampaha',
+  'Kalutara',
+  'Kandy',
+  'Matale',
+  'Nuwara Eliya',
+  'Galle',
+  'Matara',
+  'Hambantota',
+  'Jaffna',
+  'Kilinochchi',
+  'Mannar',
+  'Vavuniya',
+  'Mullaitivu',
+  'Batticaloa',
+  'Ampara',
+  'Trincomalee',
+  'Kurunegala',
+  'Puttalam',
+  'Anuradhapura',
+  'Polonnaruwa',
+  'Badulla',
+  'Monaragala',
+  'Ratnapura',
+  'Kegalle',
+] as const;
+
+export const COMPLAINT_CATEGORIES = [
+  { value: 'COLOR_DISCOLORATION', label: 'Color / Discoloration / Turbidity' },
+  { value: 'ODOR', label: 'Pungent or Chemical Odor' },
+  { value: 'TASTE', label: 'Metallic or Brackish Taste' },
+  { value: 'SEDIMENT', label: 'Heavy Sediment or Rust Particles' },
+  { value: 'SUSPECTED_CONTAMINATION', label: 'Suspected Contamination or Pathogen Risk' },
+  { value: 'PIPE_CORROSION', label: 'Pipeline Corrosion / Leakage' },
+  { value: 'OTHER', label: 'Other Drinking Water Concern' },
+] as const;
+
+export const WATER_SOURCE_TYPES = [
+  { value: 'TAP_LINE', label: 'Piped Water Supply / Tap Line' },
+  { value: 'COMMUNITY_TANK', label: 'Community Gravity Tank / Reservoir' },
+  { value: 'DEEP_TUBE_WELL', label: 'Deep Tube Well' },
+  { value: 'SHALLOW_WELL', label: 'Protected Shallow Dug Well' },
+  { value: 'NATURAL_SPRING', label: 'Natural Catchment Spring' },
+  { value: 'RIVER_RESERVOIR', label: 'River / Reservoir Intake' },
+  { value: 'RAINWATER_HARVEST', label: 'Rainwater Harvesting Facility' },
+] as const;
